@@ -11,7 +11,13 @@ config_version=4
 [application]
 
 config/name="economy"
+run/main_scene="res://scenes/Level.tscn"
 config/icon="res://common/icon.png"
+
+[autoload]
+
+Global="*res://autoload/Global.cs"
+Clock="*res://autoload/Clock.cs"
 
 [gui]
 
