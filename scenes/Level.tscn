@@ -31,8 +31,13 @@ tile_data = PoolIntArray( 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65
 
 [node name="Tiles" type="Node2D" parent="."]
 
-[node name="Producer" parent="." instance=ExtResource( 3 )]
+[node name="Buildings" type="Node2D" parent="."]
+
+[node name="Producer" parent="Buildings" instance=ExtResource( 3 )]
 position = Vector2( 128, 128 )
 
-[node name="Consumer" parent="." instance=ExtResource( 4 )]
+[node name="Producer2" parent="Buildings" instance=ExtResource( 3 )]
+position = Vector2( 448, 448 )
+
+[node name="Consumer" parent="Buildings" instance=ExtResource( 4 )]
 position = Vector2( 768, 384 )

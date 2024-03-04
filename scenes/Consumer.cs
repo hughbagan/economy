@@ -1,10 +1,8 @@
 using Godot;
 using System;
 
-public class Consumer : Node2D
+public class Consumer : Building
 {
-    [Export]
-    public Tile TileOwner;
     public const float Demand = 2.0f;
     private float ConsumeTimer = 0.0f;
     private float Consumed = 0.0f;

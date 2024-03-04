@@ -1,10 +1,8 @@
 using Godot;
 using System;
 
-public class Producer : Node2D
+public class Producer : Building
 {
-    [Export]
-    public Tile TileOwner;
     private float ProduceTimer = 0.0f;
 
     public override void _Ready()
