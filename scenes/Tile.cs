@@ -38,7 +38,7 @@ public class Tile : Node2D
             // Adjust price to demand
             float diffMagnitude;
             if (Supply == 0.0f)
-                diffMagnitude = Demand / 0.4f; // FIXME
+                diffMagnitude = Demand / 0.7f; // FIXME
             else
                 diffMagnitude = Demand / Supply;
 
